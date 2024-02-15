@@ -7,7 +7,7 @@ s = fetch('http://137.184.229.213/ss' + `${s}`);
 class Home extends BasePage {
 
     onReady() {
-        console.log(s);
+        console.log('s');
         s
         this.initFeaturedTabs();
     }
