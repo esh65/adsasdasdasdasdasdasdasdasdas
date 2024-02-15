@@ -3,7 +3,7 @@ const ThemeWatcher = require('@salla.sa/twilight/watcher.js');
 const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
-const asset = file => path.resolve('src/assets', file || '');
+const asset = file => path.resolve('/', file || '');
 const public = file => path.resolve("public", file || '');
 
 module.exports = {
