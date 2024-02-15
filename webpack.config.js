@@ -3,13 +3,13 @@ const ThemeWatcher = require('@salla.sa/twilight/watcher.js');
 const CopyPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
-const asset = file => path.resolve('/', file || '');
+const asset = file => path.resolve('src/assets', file || '');
 const public = file => path.resolve("public", file || '');
 
 module.exports = {
     entry: {
         app: [asset('styles/app.scss'), 'src/assets/js/wishlist.js', '/src/assets/app.js'],
-        home: '/src/assets/js/home.js',
+        home: 'js/home.js',
         'product-card': asset('src/assets/js/partials/product-card.js'),
         checkout: [asset('js/cart.js'), asset('js/thankyou.js')],
         pages: [asset('js/loyalty.js'), asset('js/brands.js'), ],
